@@ -1,0 +1,43 @@
+# Всички текстови файлове: Git да се грижи за новите редове
+* text=auto
+
+# Python код – винаги LF (по-чисто за lint-ери и CI)
+*.py text eol=lf
+*.pyw text eol=lf
+
+# Конфигурации
+*.ini text eol=lf
+*.cfg text eol=lf
+*.toml text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+
+# Скриптове
+*.sh text eol=lf
+*.bat text eol=crlf
+
+# Изображения / бинарни – без diff
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.bmp binary
+*.ico binary
+*.psd binary
+
+# Шрифтове / бинарни
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+
+# Архиви
+*.zip binary
+*.rar binary
+*.7z binary
+
+# По-приятен diff за Python (ако имаш конфигнат diff=python в gitconfig)
+*.py diff=python
